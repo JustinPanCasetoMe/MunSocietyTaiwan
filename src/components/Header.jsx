@@ -19,7 +19,8 @@ const Header = () => {
 
   const menuRender = menuItem.map((menu, index) => {
     return(
-      <div></div>
+      <div>Header
+      </div>
     )
   })
 
