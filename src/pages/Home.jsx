@@ -6,7 +6,7 @@ import World_MUN_Analysis from '../components/World_MUN_Analysis'
 import Feature from '../components/Feature'
 import Featuring_item from '../data/feature.json'
 import Instagram_news from '../components/Instagram_news'
-import '../css/index.css'
+import '../index.css'
 
 const Home = () => {
   return (

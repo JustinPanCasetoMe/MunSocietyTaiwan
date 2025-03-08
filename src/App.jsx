@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
-import './index.css'
+// import './index.css'
 import './css/home.css'
 import './css/content.css'
 import Footer from './components/Footer'
@@ -32,11 +32,12 @@ function App() {
     
     <div style={{paddingTop:150, backgroundColor: getBGcolor(), position:"relative"}}>
         
-      {location.pathname === "/MUN-Society-Taiwan/" && (
-        <Home />
-      )}
 
       <Routes>
+        {location.pathname === "/MUN-Society-Taiwan/" && (
+          <Route path='/MUN-Society-Taiwan/' element={<Home />}/>
+          
+        )}
         {/* <Route path="MUN-Society-Taiwan" element={<Home />}/> */}
         <Route path="MUN-Society-Taiwan/about" element={<About />}/>
         <Route path="MUN-Society-Taiwan/events" element={<Events />}/>
